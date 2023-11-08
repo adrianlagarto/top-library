@@ -1,0 +1,23 @@
+*{
+
+}
+
+.new-book-btn{
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+form input{
+  width: 50%;
+}
+
+#new-book-form{
+  border: 1px solid red;
+}
