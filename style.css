@@ -6,7 +6,7 @@
 
 }
 
-form{
+form::after, form::before{
   display: flex;
   flex-direction: column;
   justify-content: center;
