@@ -1,23 +1,147 @@
-*{
+:root {
+  --prof1: url(https://www.w3schools.com/howto/img_avatar.png);
+  --header_shadow: box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: Roboto,'Times New Roman', Times, serif;
+  padding:0;
+  margin:0;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+/*Header*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0;
+  padding:.5rem 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header h1{
+  font-size: 35px;
+}
+
+#picture{
+  background: var(--prof1) center center / cover no-repeat;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*Button*/
+
+#new-book-btn{
+  padding:1rem 1rem;
+  background-color: rgb(121, 173, 205);
+  border:1px gray;
+  border-radius: 8px;
+  font-size:20px;
+  color:#fff;
+  width:200px;
+  margin:0 auto;
+}
+
+/*Form*/
+
+#new-book-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  border-radius: 15px;
+  background-color: rgb(121, 173, 205);
+  color:#fff;
+  gap:.3rem;
+  padding:1rem 0;
+  width: 300px;
+  margin:0 auto;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap:.3rem;
+}
+
+#new-book-form label{
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+#new-book-form input{
+  width: 200px;
+  border-radius: 20px;
+  padding:.5rem 1rem;
+}
+
+.info-input{
+  background-color:#fff;
+  border:none;
+}
+
+.info-input:focus{
+  outline:none;
+}
+
+#add-book{
+  color:gray;
+  background-color: #fff;
+  border: none;
+  font-size:20px
 }
 
 .new-book-btn{
 
 }
 
-form::after, form::before{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Books*/
+
+#library{
+  display: flex;
+  gap: 1rem;
+}
+
+.card-container{
+  border:1px solid blue;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap:1rem;
+
+  width: 250px;
+  min-height: 250px;
 }
 
-form input{
-  width: 50%;
+.read-status{
+  background-color: red;
 }
 
-#new-book-form{
-  border: 1px solid red;
+.remove-btn{
+  background-color: gray;
+  border-radius: 20px;
+  padding:.3rem 1rem;
+  color:#fff;
 }
